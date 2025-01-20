@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>textarea_select_option_optgroup_button 실습</title>
+</head>
+<body>
+
+	<h1>textarea태그</h1>
+	<form>
+		<label>메세지</label>
+		<textarea name="message" rows="5" cols="30" placeholder="여기에 메제지를 입력하세요"></textarea><br>
+
+	</form>
+	
+	<hr>
+	
+	<h1>select태그 및 option태그</h1>
+	<form>
+		<select name="Languege">
+			<option value="Korean">한국어</option>
+			<option value="English">영어</option>
+			<option value="Japanese" selected="selected">일본어</option>
+		</select>
+	
+	</form>
+	<hr>
+	
+	<h1>optgroup태그</h1>
+	<form>
+		<label for="meal">선호하는 음식:</label>
+		<select id="meal" name="meal">
+		<optgroup label="한식">
+			<option value="bibimbab">비빔밥</option>
+			<option value="bulgogi">불고기</option>
+			
+		</optgroup>
+	
+		<optgroup label="양식">
+			<option value="pasta">파스타</option>
+			<option value="staek">스태이크</option>
+		</optgroup>
+	</select>
+	
+	</form>
+	
+	<hr>
+	
+	<h1>button태그</h1>
+	<form action="/HTML5/main.jsp" method="post">
+		이름 : <input type="text" name="userName"> <br>
+		나이 : <input type="number" name="userAge"> <br>
+	
+		<button type="submit">main.jsp요청</button>
+		<button type="reset">입력한 값 취소</button>
+		
+	</form>
+	
+	
+</body>
+</html>
