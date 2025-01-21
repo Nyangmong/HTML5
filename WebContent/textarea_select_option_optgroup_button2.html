@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- /는 서버를 가리킨다
+	     /는 http://localgost:8090/         절대경로
+	 -->
+
+	<form action="/HTML5/main.jsp" method="post" method="get">
+	
+	<!-- label은 사용자가 입력해야 할 <input>에 대한 설명 -->
+	<label for="comment">의견:</label>
+
+	<!-- textarea은 
+		 id는 label 태그와 연결되는 속성
+		 name은 서버가 설정하는 .jps 요청시 정달할 데이터의 이름
+		 rows는 높이를 설정하는 속성
+		 cols는
+		 placeholder는 힌트 메세지
+		-->
+	
+	<textarea id="comments"
+	 		  name="comments"
+	 		  rows="4"
+	 		  cols="50"
+	 		  placeholder="의견을 작성해 주세요"></textarea>
+	
+	<br><br>
+	
+	<label for="hobby">취미:</label>
+	<select id="hobby" name="hobby">
+		<optgroup label="운동"></optgroup>
+			<option value="Soccer">축구</option>
+			<option value="basketball">농구</option>
+			<option value="baseball">야구</option>
+		
+		<optgroup label="예술"></optgroup>
+			<option value="drawing">그림그리기</option>
+			<option value="music">음악감상</option>
+			<option value="photo">사진찍기</option>
+	</select>
+	
+	<br><br>
+	
+		<button type="submit">제출하기</button>
+		<button type="reset">초기화</button>
+	
+	</form>
+
+
+</body>
+</html>
