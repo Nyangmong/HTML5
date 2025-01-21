@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scope 속성 예제</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+  <h1>scope 속성으로 웹 접근성 향상</h1>
+  
+	<!-- 
+		웹 접근성이 향상되는 이유
+			- 테이블의 데이터가 어떤 기준으로 분류 되는지 명확해지므로, 
+			    사용자(특히 시각장애인)가 데이터를 빠르고 쉽게 이해 할 수 있음
+			- 화면 낭독기가 scope의 속성을 읽어 테이블의 구조를 정확히 설명
+		실습 결과
+			- 아래 코드를 브라우저에서 실행 하면 테이블이 출력 됨
+			- 화면에서는 변화가 없어 보이지만, 화면 낭독기를 사용할 때 헤더와 데이터를 연결해서 읽어 주는 것을 확인
+	 -->
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">과목</th>
+        <th scope="col">월요일</th>
+        <th scope="col">화요일</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">수학</th>
+        <td>9:00 ~ 10:00</td>
+        <td>10:00 ~ 11:00</td>
+      </tr>
+      <tr>
+        <th scope="row">영어</th>
+        <td>10:00 ~ 11:00</td>
+        <td>11:00 ~ 12:00</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
