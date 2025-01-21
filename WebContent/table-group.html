@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table-group</title>
+  <style>
+    table{
+      border-collapse:collapse;
+    }
+    th, td{
+      border:1px solid #ccc;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 테이블의 시작을 의미 -->
+  <table>
+  
+  	<!-- 
+  		thead, tbody, tfoot 
+  			- 웹 접근성 향상을 위해 사용
+  			- 시각 장애인 스크린 리더기로 웹 페이지를 탐색시 thead, tbody, tfoot 정보를 먼저 전달
+  			- 표 인쇄시 thead, tbody, tfoot 태그가 각각의 페이지에 인쇄되어 
+  			    여러장에 걸쳐있는 표가 어떤 표인지  파악 하기 쉬움 
+  			- 풀스택 개발에는 크게 사용하지 않음
+  	-->
+    <thead>
+    <caption>표제목</caption>
+      <tr>
+        <th>번호</th>
+        <th>상품명</th>
+        <th>수량</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+        
+    <tfoot>
+      <tr>
+        <td>총 금액</td>
+        <td colspan="3">6,500원</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>콜라</td>
+        <td>1개</td>
+        <td>1,500원</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사이다</td>
+        <td>2개</td>
+        <td rowspan="2">1,000원</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>탄산수</td>
+        <td>3개</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

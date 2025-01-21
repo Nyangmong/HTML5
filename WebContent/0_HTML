@@ -50,7 +50,7 @@ http://192.168.0.11:8090/HTML5/index.html
 -----------------------------------------------------------------------
 
 <HTML 태그들 실습>
-
+1/16
 실습2. h_p_br.html
 실습3. blockquote_q.html
 실습4. ins_del_sub_sup.html
@@ -71,7 +71,11 @@ http://192.168.0.11:8090/HTML5/index.html
 실습12. textarea_select_option_optgroup_button.html
   
 1/21
-실습13. 실습12. textarea_select_option_optgroup_button2.html    <종합예제>
+실습13. textarea_select_option_optgroup_button2.html    <종합예제>
+실습14. form관련태그에서사용할수있는추가속성.html
+실습15. table_sample.html
+실습16. table.html
+실습17. table-group.html
 
 
 

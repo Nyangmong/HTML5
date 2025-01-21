@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 
+		주제: 폼 양식 관련 태그에서 사용할 수 있는 추가 속성
+		<disabled>
+			- 상호작용 요소를 비활성화, input, textarea, select, button태그에서 사용
+			- 태그가 비활성화 되면 입력요소는 텍스트를 입력 할 수 없음
+			- 목록상자는 항목을 선택 할 수 없음
+			- 버튼요소는 버튼을 클릭 할 수 없음
+			- 문법
+			<태그명 disabled></태그명> 또는 <태그명 disabled>
+			 -->
+	<input type="text" disabled value="admin">
+	<button type="button" disabled>비활성화 버튼</button>
+	
+	<hr>
+	
+	<!--  
+		<readonly>
+			- 상호작용 요소를 읽기 전용으로 변경
+			- 입력은 불가, 요소를 선택하거나 드래그 해서 복사 가능
+			- input, textarea 에서 사용
+			- 다만 input 태그에서는 type 속성의 값이 text, 
+			  searsh, url, tel, email. password, date, month, week,
+			  time, date-local, number일 때만 사용 가능
+			- 문법
+			<태그명 readonly></태그명> 또는 <태그명 readonly>
+	 -->
+	<input type="text" value="초기값" readonly>
+	<textarea readonly>초기값</textarea>
+
+
+	<!-- 
+		disabled 속성은 서버에 값이 아예 전송되지 않음
+		readonly 속성의 태그값  [value="값"]은 서버에 전송 됨 
+	 -->
+	<hr>
+	
+	<!--
+		<maxlength>
+			- 입력할 수 있는 글자 수를 제한
+			- textarea 태그와 input 태그의 속성의 값이 text, 
+			  searsh, url, tel, email. password, date, month, week,
+			  time, date-local, number일 때만 사용 가능
+			- 문법
+			<태그명 maxlength="숫자"></태그명> 또는 <태그명 maxlength="숫자">
+		 -->
+	<input type="url" maxlength="4"> <!-- maxlength="4"로 설정하면 4글자 까지만 입력 -->
+	<textarea maxlength="4"></textarea>
+
+	<hr>
+	
+	<!-- 
+		<checked>
+			- 요소를 선택한 상태로 표시하거나 체크한 상태로 표시할 수 있게 하는 속성
+			- 선택요소가 있어야 함으로 input태그의 type 속성 값이 checkbox 나 radio 요소에만 사용
+			- 문법
+			<태그명 checked></태그명> 또는 <태그명 checked>	 -->
+
+	<form>
+		<fieldset>
+			<legend>좋아하는 과일</legend>
+				<input type="checkbox" id="banana" name="banana" value="banana">
+				<label for="banana">바나나</label><br>
+				<input type="checkbox" id="apple" name="apple" value="apple">
+				<label for="apple">사과</label><br>
+				<input type="checkbox" id="orange" name="orange" value="orange" checked>
+				<label for="orange">오랜지</label><br>
+		</fieldset>
+	
+			<fieldset>
+			<legend>좋아하는 과일</legend>
+				<input type="radio" id="banana" name="banana" value="banana">
+				<label for="banana">바나나</label><br>
+				<input type="radio" id="apple" name="apple" value="apple">
+				<label for="apple">사과</label><br>
+				<input type="radio" id="orange" name="orange" value="orange" checked>
+				<label for="orange">오랜지</label><br>
+		</fieldset>
+	
+	</form>
+
+	<hr>
+	
+	<!-- 
+		<placeholder>
+			- 입력 요소에 이미 값을 입력하여 사이트 이용자에게 힌트를 주는 속성
+			- 문법
+			<태그명 placeholder="입력값에 대한 힌트메세지></태그명>
+			또는 <태그명 placeholder="입력값에 대한 힌트메세지>	 -->
+
+		<input type="tel" placeholder="전화번호를 입력해주세요">
+		
+</body>
+</html>
